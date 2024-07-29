@@ -1,0 +1,2170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>vCard - Personal Portfolio</title>
+
+    <!--
+    - favicon
+  -->
+    <link
+      rel="shortcut icon"
+      href="./assets/images/logo.ico"
+      type="image/x-icon"
+    />
+
+    <!--
+    - custom css link
+  -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!--
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!--
+    - #MAIN
+  -->
+
+    <main>
+      <!--
+      - #SIDEBAR
+    -->
+
+      <aside class="sidebar" data-sidebar>
+        <div class="sidebar-info">
+          <figure class="avatar-box" style="border-radius: 50%">
+            <img
+              src="./assets/images/person.PNG"
+              alt="Richard hanrick"
+              width="80"
+              style="border-radius: 50%"
+            />
+          </figure>
+
+          <div class="info-content">
+            <h1 class="name" title="Richard hanrick">Jose Campos</h1>
+
+            <p class="title">Full Stack Developer & DevOps</p>
+          </div>
+
+          <button class="info_more-btn" data-sidebar-btn>
+            <span>Mostrar Contactos</span>
+
+            <ion-icon name="chevron-down"></ion-icon>
+          </button>
+        </div>
+
+        <div class="sidebar-info_more">
+          <div class="separator"></div>
+
+          <ul class="contacts-list">
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
+              <div class="contact-info">
+                <p class="contact-title">Correo Electrónico</p>
+                <a
+                  href="mailto:joseluiscampostorres10@gmail.com"
+                  class="contact-link"
+                  >joseluiscampostorres10@gmail.com</a
+                >
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="phone-portrait-outline"></ion-icon>
+              </div>
+              <div class="contact-info">
+                <p class="contact-title">Teléfono</p>
+                <a href="tel:+51940746627" class="contact-link"
+                  >+51 940-746-627</a
+                >
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="calendar-outline"></ion-icon>
+              </div>
+              <div class="contact-info">
+                <p class="contact-title">Fecha de Nacimiento</p>
+                <time datetime="2002-10-27">27 de octubre de 2002</time>
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
+              <div class="contact-info">
+                <p class="contact-title">Ubicación</p>
+                <address>San Isidro, Lima, Perú</address>
+              </div>
+            </li>
+          </ul>
+
+          <div class="separator"></div>
+
+          <ul class="social-list">
+            <li class="social-item">
+              <a
+                href="https://wa.link/aj1wbs"
+                class="social-link"
+                target="_blank"
+              >
+                <ion-icon name="logo-whatsapp"></ion-icon>
+              </a>
+            </li>
+
+            <li class="social-item">
+              <a
+                href="https://www.linkedin.com/in/josecampost/"
+                class="social-link"
+                target="_blank"
+              >
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+
+            <li class="social-item">
+              <a
+                href="https://github.com/JoseCamposTorres"
+                class="social-link"
+                target="_blank"
+              >
+                <ion-icon name="logo-github"></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+
+      <!--
+      - #main-content
+    -->
+
+      <div class="main-content">
+        <!--
+        - #NAVBAR
+      -->
+
+        <nav class="navbar">
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <button class="navbar-link active" data-nav-link>Inicio</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Estudios</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Experiencia</button>
+            </li>
+            
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Proyectos</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Contáctame</button>
+            </li>
+          </ul>
+        </nav>
+
+        <!--
+        - #ABOUT
+      -->
+
+        <article class="inicio active" data-page="inicio">
+          <header>
+            <h2 class="h2 article-title">Inicio</h2>
+          </header>
+
+          <section class="about-text">
+            <p>
+              Soy estudiante de décimo semestre de Ingeniería de Sistemas con
+              más de 3 años de experiencia en desarrollo Full Stack y DevOps en
+              diversas industrias.
+            </p>
+
+            <p>
+              Me especializo en transformar problemas complejos en soluciones
+              simples y efectivas mediante el desarrollo de aplicaciones y
+              sistemas funcionales y seguros, con un diseño atractivo e
+              intuitivo.
+            </p>
+            <style>
+              .buttons-container {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-around;
+                margin: 20px 0;
+                flex-wrap: wrap; /* Permite que los botones se envuelvan en líneas nuevas si es necesario */
+              }
+
+              .form-btn {
+                margin: 10px;
+                padding: 10px 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #fff;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+              }
+
+              .form-btn ion-icon {
+                margin-right: 5px;
+              }
+
+              @media (max-width: 600px) {
+                .buttons-container {
+                  align-items: center;
+                  justify-content: center;
+                  margin-left: 20px;
+                  margin-right: 30px;
+                  flex-direction: column; /* Cambia la dirección a columna en pantallas más pequeñas */
+                }
+              }
+            </style>
+            <div class="buttons-container">
+              <button class="form-btn">
+                <ion-icon name="paper-plane"></ion-icon>
+                <span>Descargar CV - Español</span>
+              </button>
+
+              <button class="form-btn">
+                <ion-icon name="paper-plane"></ion-icon>
+                <span>Download CV - Inglés</span>
+              </button>
+            </div>
+          </section>
+
+          <!--
+          - service
+        -->
+
+          <section class="service" >
+            <h3 class="h3 service-title">Tecnologías Utilizadas</h3>
+            <span style="color: rgb(155, 149, 149); font-family: 'Arial', sans-serif; font-weight: bold; font-size: 16px; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);">Domino las siguientes tecnologías para el desarrollo Frontend:</span>
+<!-- para movimiento id="clientsList" -->
+            <ul class="clients-list has-scrollbar" >
+              <li class="clients-item" >
+                  <img
+                    height="140px"
+                    src="./assets/tech/angular.svg"
+                    alt="client logo"
+                  />
+                  <span style="color: wheat; text-align: center; font-size: 20px;">Angular</span>
+              </li>
+
+              <li class="clients-item" >
+                  <img
+                    height="140px"
+                    src="./assets/tech/nextjs.svg"
+                    alt="client logo"
+                  />
+                  <span style="color: wheat; text-align: center; font-size: 20px;">NextJS</span>
+              </li>
+
+              <li class="clients-item" >
+                  <img
+                    height="140px"
+                    src="./assets/tech/vite.svg"
+                    alt="client logo"
+                  />
+                  <span style="color: wheat; text-align: center; font-size: 20px;">ViteJS</span>
+              </li>
+
+              <li class="clients-item">
+                  <img
+                    height="140px"
+                    src="./assets/tech/react.svg"
+                    alt="client logo"
+                  />
+                  <span style="color: wheat; text-align: center; font-size: 20px;">ReactJS</span>
+              </li>
+
+              <li class="clients-item">
+                  <img
+                    height="140px"
+                    src="./assets/tech/vue.svg"
+                    alt="client logo"
+                  />
+                  <span style="color: wheat; text-align: center; font-size: 20px;">VueJS</span>
+              </li>
+
+              <li class="clients-item">
+                  <img
+                    height="140px"
+                    src="./assets/tech/html-5.svg"
+                    alt="client logo"
+                  />
+                  <span style="color: wheat; text-align: center; font-size: 20px;">Html5</span>
+              </li>
+
+              <li class="clients-item">
+                  <img
+                    height="140px"
+                    src="./assets/tech/css-3.svg"
+                    alt="client logo"
+                  />
+                  <span style="color: wheat; text-align: center; font-size: 20px;">Css3</span>
+              </li>
+
+              <li class="clients-item">
+                  <img
+                    height="140px"
+                    src="./assets/tech/javascript.svg"
+                    alt="client logo"
+                  />
+                  <span style="color: wheat; text-align: center; font-size: 20px;">JavaScript</span>
+              </li>
+
+              <li class="clients-item">
+                  <img
+                    height="140px"
+                    src="./assets/tech/boot.png"
+                    alt="client logo"
+                  />
+                  <span style="color: wheat; text-align: center; font-size: 20px;">Bootstrap</span>
+              </li>
+
+              <li class="clients-item">
+                  <img
+                    height="140px"
+                    src="./assets/tech/tailwindcss-icon.svg"
+                    alt="client logo"
+                  />
+                  <span style="color: wheat; text-align: center; font-size: 20px;">TailwindCSS</span>
+              </li>
+
+              <li class="clients-item">
+                  <img
+                    height="140px"
+                    src="./assets/tech/sass.png"
+                    alt="client logo"
+                  />
+                  <span style="color: wheat; text-align: center; font-size: 20px;">Sass</span>
+              </li>
+
+              <li class="clients-item">
+                  <img
+                    height="140px"
+                    src="./assets/tech/typescript-icon.svg"
+                    alt="client logo"
+                  />
+                  <span style="color: wheat; text-align: center; font-size: 20px;">TypeScript</span>
+              </li>
+
+              <li class="clients-item">
+                  <img
+                    height="140px"
+                    src="./assets/tech/jquery.png"
+                    alt="client logo"
+                  />
+                  <span style="color: wheat; text-align: center; font-size: 20px;">JQuery</span>
+              </li>
+
+              <li class="clients-item">
+                  <img 
+                    src=""
+                    alt=""
+                  />
+              </li>
+            </ul>
+            <br>
+            <span style="color: rgb(155, 149, 149); font-family: 'Arial', sans-serif; font-weight: bold; font-size: 16px; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);">Domino las siguientes tecnologías para el desarrollo Backend:</span>
+
+            <ul class="clients-list has-scrollbar" >
+              <li class="clients-item" >
+                  <img
+                    height="140px"
+                    src="./assets/tech/java.svg"
+                    alt="client logo"
+                  />
+                  <span style="color: wheat; text-align: center; font-size: 20px;">Java</span>
+              </li>
+
+              <li class="clients-item">
+                  <img
+                    height="140px"
+                    src="./assets/tech/spring-svgrepo-com.svg"
+                    alt="client logo"
+                  />
+                  <span style="color: wheat; text-align: center; font-size: 20px;">Spring Boot</span>
+              </li>
+
+              <li class="clients-item" >
+                  <img
+                    height="140px"
+                    src="./assets/tech/nodejs.svg"
+                    alt="client logo"
+                  />
+                  <span style="color: wheat; text-align: center; font-size: 20px;">NodeJS</span>
+              </li>
+
+              <li class="clients-item">
+                  <img
+                    height="140px"
+                    src="./assets/tech/python.svg"
+                    alt="client logo"
+                  />
+                  <span style="color: wheat; text-align: center; font-size: 20px;">Python</span>
+              </li>
+
+              <li class="clients-item">
+                  <img
+                    height="140px"
+                    src="./assets/tech/php.svg"
+                    alt="client logo"
+                  />
+                  <span style="color: wheat; text-align: center; font-size: 20px;">Php</span>
+              </li>
+
+              <li class="clients-item">
+                  <img
+                    height="140px"
+                    src="./assets/tech/laravel.svg"
+                    alt="client logo"
+                  />
+                  <span style="color: wheat; text-align: center; font-size: 20px;">Laravel</span>
+              </li>
+
+              <li class="clients-item">
+                  <img
+                    height="140px"
+                    src="./assets/tech/nest.png"
+                    alt="client logo"
+                  />
+                  <span style="color: wheat; text-align: center; font-size: 20px;">NestJS</span>
+              </li>
+
+              <li class="clients-item">
+                  <img
+                    height="140px"
+                    src="./assets/tech/docker.svg"
+                    alt="client logo"
+                  />
+                  <span style="color: wheat; text-align: center; font-size: 20px;">Docker</span>
+              </li>
+
+              <li class="clients-item">
+                  <img
+                    height="140px"
+                    src="./assets/tech/kubernetes-svgrepo-com.svg"
+                    alt="client logo"
+                  />
+                  <span style="color: wheat; text-align: center; font-size: 20px;">Kubernetes</span>
+              </li>
+
+              <li class="clients-item">
+                  <img
+                    height="140px"
+                    src="./assets/tech/sequelize.svg"
+                    alt="client logo"
+                  />
+                  <span style="color: wheat; text-align: center; font-size: 20px;">Sequelize</span>
+              </li>
+
+              <li class="clients-item">
+                  <img 
+                    src=""
+                    alt=""
+                  />
+              </li>
+            </ul>
+
+            <br>
+            <span style="color: rgb(155, 149, 149); font-family: 'Arial', sans-serif; font-weight: bold; font-size: 16px; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);">Domino las siguientes Base de datos:</span>
+
+            <ul class="clients-list has-scrollbar" >
+              <li class="clients-item" >
+                  <img
+                    height="140px"
+                    src="./assets/tech/postgresql.svg"
+                    alt="client logo"
+                  />
+                  <span style="color: wheat; text-align: center; font-size: 20px;">PostgreSQL</span>
+              </li>
+
+              <li class="clients-item" >
+                  <img
+                    height="140px"
+                    src="./assets/tech/mysql.svg"
+                    alt="client logo"
+                  />
+                  <span style="color: wheat; text-align: center; font-size: 20px;">MySQL</span>
+              </li>
+
+              <li class="clients-item" >
+                  <img
+                    height="140px"
+                    src="./assets/tech/mongodb.svg"
+                    alt="client logo"
+                  />
+                  <span style="color: wheat; text-align: center; font-size: 20px;">MongoDB</span>
+              </li>
+
+              <li class="clients-item" >
+                  <img
+                    height="140px"
+                    src="./assets/tech/sqlserver.svg"
+                    alt="client logo"
+                  />
+                  <span style="color: wheat; text-align: center; font-size: 20px;">SQL Server</span>
+              </li>
+
+              <li class="clients-item" >
+                  <img
+                    height="140px"
+                    src="./assets/tech/oracle.svg"
+                    alt="client logo"
+                  />
+                  <span style="color: wheat; text-align: center; font-size: 20px;">Oracle</span>
+              </li>
+
+              <li class="clients-item" >
+                  <img
+                    height="140px"
+                    src="./assets/tech/firebase.png"
+                    alt="client logo"
+                  />
+                  <span style="color: wheat; text-align: center; font-size: 20px;">Firebase</span>
+              </li>
+
+              <li class="clients-item">
+                  <img 
+                    src=""
+                    alt=""
+                  />
+              </li>
+            </ul>
+
+            <br>
+            <span style="color: rgb(155, 149, 149); font-family: 'Arial', sans-serif; font-weight: bold; font-size: 16px; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);">Domino los siguientes Servicios en la Nube:</span>
+
+            <ul class="clients-list has-scrollbar" >
+              <li class="clients-item" >
+                  <img
+                    height="140px"
+                    src="./assets/tech/aws.svg"
+                    alt="client logo"
+                  />
+                  <span style="color: wheat; text-align: center; font-size: 20px;">AWS</span>
+              </li>
+
+              <li class="clients-item" >
+                  <img
+                    height="140px"
+                    src="./assets/tech/azure.png"
+                    alt="client logo"
+                  />
+                  <span style="color: wheat; text-align: center; font-size: 20px;">Azure</span>
+              </li>
+
+              <li class="clients-item" >
+                  <img
+                    height="140px"
+                    src="./assets/tech/gcp.svg"
+                    alt="client logo"
+                  />
+                  <span style="color: wheat; text-align: center; font-size: 20px;">Google Cloud Platform</span>
+              </li>
+
+              <li class="clients-item">
+                  <img 
+                    src=""
+                    alt=""
+                  />
+              </li>
+            </ul>
+
+    
+            <span style="color: rgb(155, 149, 149); font-family: 'Arial', sans-serif; font-weight: bold; font-size: 16px; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);">Otras Tecnologias</span>
+
+            <ul class="clients-list has-scrollbar" >
+              <li class="clients-item" >
+                <a href="#">
+                  <img
+                    height="150px"
+                    src="./assets/tech/Jenkins_logo.svg.png"
+                    alt="client logo"
+                  />
+                  <span style="color: wheat; text-align: center; font-size: 20px;">Jenkins</span>
+                </a>
+              </li>
+
+              <li class="clients-item" >
+                <a href="#">
+                  <img
+                    height="150px"
+                    src="./assets/tech/junit.png"
+                    alt="client logo"
+                    style="border-radius: 50%;"
+                  />
+                  <span style="color: wheat; text-align: center; font-size: 20px;">JUnit 5</span>
+                </a>
+              </li>
+
+              <li class="clients-item" >
+                  <img
+                    height="150px"
+                    src="./assets/tech/jmeter_square.svg"
+                    alt="client logo"
+                  />
+                  <span style="color: wheat; text-align: center; font-size: 20px;">JMeter</span>
+              </li>
+
+              <li class="clients-item" >
+                  <img
+                    height="140px"
+                    src="./assets/tech/kotlin.svg"
+                    alt="client logo"
+                  />
+                  <span style="color: wheat; text-align: center; font-size: 20px;">Kotlin</span>
+              </li>
+
+              <li class="clients-item" >
+                <img
+                  height="140px"
+                  src="./assets/tech/android-color-svgrepo-com.svg"
+                  alt="client logo"
+                />
+                <span style="color: wheat; text-align: center; font-size: 20px;">Android Studio</span>
+            </li>
+
+              <li class="clients-item" >
+                  <img
+                    height="140px"
+                    src="./assets/tech/c-plusplus.svg"
+                    alt="client logo"
+                  />
+                  <span style="color: wheat; text-align: center; font-size: 20px;">C++</span>
+              </li>
+
+              <li class="clients-item" >
+                  <img
+                    height="140px"
+                    src="./assets/tech/git-svgrepo-com.svg"
+                    alt="client logo"
+                  />
+                  <span style="color: wheat; text-align: center; font-size: 20px;">Git</span>
+              </li>
+
+              <li class="clients-item" >
+                  <img
+                    height="140px"
+                    src="./assets/tech/github-octocat-svgrepo-com.svg"
+                    alt="client logo"
+                  />
+                  <span style="color: wheat; text-align: center; font-size: 20px;">GitHub</span>
+              </li>
+
+              <li class="clients-item" >
+                  <img
+                    height="140px"
+                    src="./assets/tech/gitlab-svgrepo-com.svg"
+                    alt="client logo"
+                  />
+                  <span style="color: wheat; text-align: center; font-size: 20px;">GitLab CI</span>
+              </li>
+
+              <li class="clients-item" >
+                <img
+                  height="140px"
+                  src="./assets/tech/postman-icon-svgrepo-com (1).svg"
+                  alt="client logo"
+                />
+                <span style="color: wheat; text-align: center; font-size: 20px;">Postman</span>
+            </li>
+
+              <li class="clients-item" >
+                  <img
+                    height="140px"
+                    src="./assets/tech/jira-svgrepo-com.svg"
+                    alt="client logo"
+                  />
+                  <span style="color: wheat; text-align: center; font-size: 20px;">Jira</span>
+              </li>
+
+              <li class="clients-item" >
+                <img
+                  height="140px"
+                  src="./assets/tech/trello-svgrepo-com.svg"
+                  alt="client logo"
+                />
+                <span style="color: wheat; text-align: center; font-size: 20px;">Trello</span>
+            </li>
+
+            <li class="clients-item" >
+              <img
+                height="140px"
+                src="./assets/tech/notion-svgrepo-com.svg"
+                alt="client logo"
+              />
+              <span style="color: wheat; text-align: center; font-size: 20px;">Notion</span>
+          </li>
+
+              <li class="clients-item" >
+                  <img
+                    height="140px"
+                    src="./assets/tech/scrum-svgrepo-com.svg"
+                    alt="client logo"
+                  />
+                  <span style="color: wheat; text-align: center; font-size: 20px;">Scrum</span>
+              </li>
+
+              <li class="clients-item" >
+                  <img
+                    height="140px"
+                    src="./assets/tech/figma-svgrepo-com.svg"
+                    alt="client logo"
+                  />
+                  <span style="color: wheat; text-align: center; font-size: 20px;">Figma</span>
+              </li>
+
+              <li class="clients-item">
+                  <img 
+                    src=""
+                    alt=""
+                  />
+              </li>
+            </ul>
+            
+          </section>
+
+          <!--
+          - testimonials
+        -->
+
+          <section class="testimonials">
+            <h3 class="h3 testimonials-title">Testimonios</h3>
+
+            <ul class="testimonials-list has-scrollbar">
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <figure
+                    class="testimonials-avatar-box"
+                    style="border-radius: 50%"
+                  >
+                    <img
+                      src="./assets/images/avatar-1.png"
+                      alt="Daniel Avila"
+                      width="60"
+                      data-testimonials-avatar
+                      style="border-radius: 50%"
+                    />
+                  </figure>
+
+                  <h4
+                    class="h4 testimonials-item-title"
+                    data-testimonials-title
+                  >
+                    Tec. Daniel Avila
+                  </h4>
+
+                  <div class="testimonials-text" data-testimonials-text>
+                    <p>
+                      Jose Luis mostró una habilidad impresionante en el
+                      desarrollo de sistemas web. Su conocimiento técnico y
+                      capacidad para solucionar problemas complejos fueron clave
+                      en nuestros proyectos. Su dedicación y profesionalismo lo
+                      hacen destacar como un desarrollador confiable y
+                      eficiente.
+                      <br />
+                      <b>— Gerente de Proyectos (Hi – Net International)</b>
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <figure
+                    class="testimonials-avatar-box"
+                    style="border-radius: 50%"
+                  >
+                    <img
+                      src="./assets/images/avatar-4.png"
+                      alt="Anthony Vicente"
+                      width="60"
+                      data-testimonials-avatar
+                      style="border-radius: 50%"
+                    />
+                  </figure>
+
+                  <h4
+                    class="h4 testimonials-item-title"
+                    data-testimonials-title
+                  >
+                    Tec. Anthony Vicente
+                  </h4>
+
+                  <div class="testimonials-text" data-testimonials-text>
+                    <p>
+                      Trabajar con Jose Luis fue una experiencia muy positiva.
+                      Su capacidad para integrar nuevas tecnologías y mejorar
+                      nuestros sistemas existentes fue invaluable. Siempre
+                      estaba dispuesto a colaborar y encontrar soluciones
+                      innovadoras para los desafíos que enfrentábamos.
+                      <br />
+                      <b>— Director General (Hi – Net International)</b>
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <figure
+                    class="testimonials-avatar-box"
+                    style="border-radius: 50%"
+                  >
+                    <img
+                      src="./assets/images/test1.jpg"
+                      alt="Alex Pacheco"
+                      width="60"
+                      data-testimonials-avatar
+                      style="border-radius: 50%"
+                    />
+                  </figure>
+
+                  <h4
+                    class="h4 testimonials-item-title"
+                    data-testimonials-title
+                  >
+                    Mg. Alex Pacheco
+                  </h4>
+
+                  <div class="testimonials-text" data-testimonials-text>
+                    <p>
+                      Durante su tiempo en la empresa, Jose Luis se desempeñó
+                      como Full Stack Developer y DevOps Developer. Su notable
+                      capacidad técnica y su liderazgo fueron cruciales para el
+                      éxito de nuestros proyectos. Su dedicación y habilidad
+                      para resolver problemas complejos han dejado una impresión
+                      duradera en nuestro equipo.<br />
+                      <b>— Director General (Perú Travels Team S.A.C)</b>
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <figure
+                    class="testimonials-avatar-box"
+                    style="border-radius: 50%"
+                  >
+                    <img
+                      src="./assets/images/avatar-1.png"
+                      alt="Marcos Manrique"
+                      width="60"
+                      data-testimonials-avatar
+                      style="border-radius: 50%"
+                    />
+                  </figure>
+
+                  <h4
+                    class="h4 testimonials-item-title"
+                    data-testimonials-title
+                  >
+                    Ing. Marcos Manrique
+                  </h4>
+
+                  <div class="testimonials-text" data-testimonials-text>
+                    <p>
+                      Jose Luis demostró una excelente capacidad para diseñar e
+                      implementar soluciones innovadoras. Su habilidad para
+                      trabajar bajo presión y su compromiso con la calidad
+                      fueron clave para el éxito de nuestros proyectos
+                      tecnológicos. Su profesionalismo y habilidades técnicas
+                      superaron nuestras expectativas.
+                      <br />
+                      <b
+                        >— Director del Área de TI (Ministerio Público de
+                        Cañete)</b
+                      >
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <figure
+                    class="testimonials-avatar-box"
+                    style="border-radius: 50%"
+                  >
+                    <img
+                      src="./assets/images/test4.jpg"
+                      alt="Emily evans"
+                      width="60"
+                      data-testimonials-avatar
+                      style="border-radius: 50%"
+                    />
+                  </figure>
+
+                  <h4
+                    class="h4 testimonials-item-title"
+                    data-testimonials-title
+                  >
+                    Ing. Jose Jollja
+                  </h4>
+
+                  <div class="testimonials-text" data-testimonials-text>
+                    <p>
+                      Jose Luis Campos Torres es un profesional excepcional,
+                      comprometido con la excelencia y la innovación. Su
+                      capacidad para resolver problemas complejos y su atención
+                      al detalle han sido fundamentales en el éxito de nuestros
+                      proyectos. Ha sido un placer trabajar con alguien tan
+                      dedicado y talentoso.
+                      <br />
+                      <b
+                        >— CEO de Softaki - Consultora de Tecnología e
+                        Innovación</b
+                      >
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <figure
+                    class="testimonials-avatar-box"
+                    style="border-radius: 50%"
+                  >
+                    <img
+                      src="./assets/images/test5.jpg"
+                      alt="Emily evans"
+                      width="60"
+                      data-testimonials-avatar
+                      style="border-radius: 50%"
+                    />
+                  </figure>
+
+                  <h4
+                    class="h4 testimonials-item-title"
+                    data-testimonials-title
+                  >
+                    Ing. Jhonatan Echaccaya
+                  </h4>
+
+                  <div class="testimonials-text" data-testimonials-text>
+                    <p>
+                      Jose Campos es un profesional sobresaliente
+                      que ha demostrado un talento excepcional para desarrollar
+                      soluciones tecnológicas innovadoras. Su habilidad para
+                      adaptarse rápidamente a nuevos desafíos y su enfoque
+                      meticuloso para garantizar resultados de alta calidad lo
+                      convierten en una elección ideal para cualquier startup.
+                      Su contribución ha sido invaluable en nuestro equipo,
+                      siempre aportando ideas frescas y eficientes que han
+                      mejorado significativamente nuestros procesos.
+                      <br />
+                      <b>— CEO de Rumba77 - Startup</b>
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </section>
+
+          <!--
+          - testimonials modal
+        -->
+
+          <div class="modal-container" data-modal-container>
+            <div class="overlay" data-overlay></div>
+
+            <section class="testimonials-modal">
+              <button class="modal-close-btn" data-modal-close-btn>
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
+
+              <div class="modal-img-wrapper">
+                <figure class="modal-avatar-box">
+                  <img
+                    src="./assets/images/avatar-1.png"
+                    alt="Daniel lewis"
+                    width="80"
+                    data-modal-img
+                  />
+                </figure>
+
+                <img src="./assets/images/icon-quote.svg" alt="quote icon" />
+              </div>
+
+              <div class="modal-content">
+                <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+                <!-- <time datetime="2021-06-14">14 June, 2021</time> -->
+
+                <div data-modal-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were
+                    very pleased with the work done. She has a lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum
+                    dolor sit amet, ullamcous cididt consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels
+                    dolore magnarels alia.
+                  </p>
+                </div>
+              </div>
+            </section>
+          </div>
+
+          <!--
+          - clients
+        -->
+
+          <section class="clients">
+            <h3 class="h3 clients-title">Empresas Satisfechas</h3>
+
+            <ul class="clients-list has-scrollbar">
+              <li class="clients-item">
+                  <img
+                    height="150px"
+                    src="./assets/images/empresa1.png"
+                    alt="client logo"
+                  />
+              </li>
+
+              <li class="clients-item">
+                  <img
+                    height="150px"
+                    src="./assets/images/empresa2.png"
+                    alt="client logo"
+                  />
+              </li>
+
+              <li class="clients-item">
+                  <img
+                    height="150px"
+                    src="./assets/images/empresa3.png"
+                    alt="client logo"
+                  />
+              </li>
+
+              <li class="clients-item">
+                  <img
+                    height="150px"
+                    src="./assets/images/empresa4.png"
+                    alt="client logo"
+                  />
+              </li>
+
+              <li class="clients-item">
+                  <img
+                    height="150px"
+                    src="./assets/images/empresa5.png"
+                    alt="client logo"
+                  />
+              </li>
+              <!-- -->
+              <li class="clients-item">
+                  <img 
+                  height="150px" src="./assets/images/quilmana-removebg-preview.png" alt="client logo" />
+              </li>
+
+              <li class="clients-item">
+                  <img  height="130px" src="./assets/images/empresa6.png" alt="client logo" style="margin-top: 25px;" />
+              </li>
+            
+
+              <li class="clients-item">
+                  <img src="" alt="" />
+              </li>
+              <!-- <li class="clients-item">
+                <a href="#">
+                  <img width="190px"
+                    src="./assets/images/empresa7.png"
+                    alt="client logo"
+                  />
+                </a>
+              </li> -->
+            </ul>
+          </section>
+        </article>
+
+        <!--
+        - #Estudios
+      -->
+
+        <article class="estudios" data-page="estudios">
+          <header>
+            <h2 class="h2 article-title">Estudios</h2>
+          </header>
+
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+
+              <h3 class="h3">Educacion</h3>
+            </div>
+
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Universidad Nacional de Cañete
+                </h4>
+
+                <span>Enero 2020 — Actualidad</span>
+
+                <p class="timeline-text">
+                  Décimo ciclo de la carrera profesional de Ingeniería de
+                  Sistemas.
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Universidad Metropolitana de Educación, Ciencia y Tecnología
+                  (UMECIT)
+                </h4>
+
+                <span>Noviembre 2023 — Noviembre 2023</span>
+
+                <p class="timeline-text">
+                  Seminario Internacional en Innovación, Liderazgo,
+                  Emprendimiento Organizacional y Nuevos Mercados Globales,
+                  Panamá (Presencial).
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">CJava - Perú</h4>
+
+                <span>Agosto 2023 — Mayo 2024</span>
+
+                <p class="timeline-text">Carrera de Full Stack Developer.</p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Asociación Cultural Peruano Británico
+                </h4>
+
+                <span>Febrero 2023 — Febrero 2024</span>
+
+                <p class="timeline-text">Inglés básico.</p>
+              </li>
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Centro de Idiomas de la Universidad Nacional de Cañete
+                </h4>
+
+                <span>Agosto 2021 — Abril 2022</span>
+
+                <p class="timeline-text">Inglés intermedio.</p>
+              </li>
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Centro de Idiomas de la Universidad Nacional de Cañete
+                </h4>
+
+                <span>Abril 2021 — Julio 2021</span>
+
+                <p class="timeline-text">Inglés básico.</p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">TDI - Perú</h4>
+
+                <span>Abril 2021 — Mayo 2021</span>
+
+                <p class="timeline-text">Web Developer.</p>
+              </li>
+            </ol>
+          </section>
+        </article>
+
+        <!--
+        - #Experiencia
+      -->
+        <article class="experiencia" data-page="experiencia">
+          <header>
+            <h2 class="h2 article-title">Experiencia</h2>
+          </header>
+
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+
+              <h3 class="h3">Experiencia</h3>
+            </div>
+
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Ministerio Público de Cañete - (Software Engineer I)
+                </h4>
+
+                <span>Abril 2024 – Julio 2024</span>
+
+                <p class="timeline-text">
+                  Diseñé e implementé un sistema de administración en Cañete,
+                  mejorando la gestión interna y la eficiencia operativa.
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Softaki - (Software Engineer I)
+                </h4>
+
+                <span>Agosto 2023 – Marzo 2024</span>
+
+                <p class="timeline-text">
+                  Diseñé APIs RESTful para redes sociales, creé una web con
+                  animaciones interactivas y colaboré en el desarrollo de la web
+                  de ArquiTechPro.
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Ministerio Público de Cañete - (Full Stack Developer)</h4>
+
+                <span>Febrero 2023 – Julio 2023</span>
+
+                <p class="timeline-text">
+                  Diseñé sistemas para UDAVIT y registro fiscal, gestioné servidores Ubuntu/Debian, e implementé medidas de seguridad y optimización del rendimiento.
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Peru Travels Team S.A.C - (Full Stack Developer & DevOps Developer)</h4>
+
+                <span>Enero 2022 – Enero 2023</span>
+
+                <p class="timeline-text">
+                  Configuré pipelines CI/CD con Jenkins y GitLab CI, implementé Docker y Kubernetes, gestioné recursos en AWS, realicé mantenimiento y optimización de servidores, y administré versiones con Git.
+                </p>
+                <span>Enero 2021 – Diciembre 2021</span>
+
+                <p class="timeline-text">
+                  Construí y desplegué aplicaciones web con React, Angular, Node.js y Spring Boot, optimizando frontend y backend, migré a microservicios, diseñé APIs RESTful, y desarrollé pruebas automatizadas con JUnit y JMeter.
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">HiNet International - (Web System Developer)</h4>
+
+                <span>Enero 2020 – Diciembre 2020</span>
+
+                <p class="timeline-text">
+                  Desarrollé un sistema de Mesa de Ayuda, un sistema de ventas para restaurantes y una página web empresarial, mejorando la eficiencia y visibilidad en un 80-90%.
+                </p>
+                
+              </li>
+            </ol>
+          </section>
+        </article>
+
+        <!--
+        - #PORTFOLIO
+      -->
+
+        <article class="proyectos" data-page="proyectos">
+          <header>
+            <h2 class="h2 article-title">Proyectos</h2>
+          </header>
+
+          <section class="projects">
+
+            <div class="filter-select-box" style="display: none;">
+              <button class="filter-select" data-select>
+                <!-- <div class="select-value" data-selecct-value> -->
+                  <!-- Select category -->
+                <!-- </div> -->
+
+                <div class="select-icon">
+                  <ion-icon name="chevron-down"></ion-icon>
+                </div>
+              </button>
+
+            </div>
+
+            <ul class="project-list">
+              <li class="project-item active" data-filter-item data-category="web development"  >
+                <a href="#" onclick="openModal('modal0')">
+                  <figure class="project-img" >
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img src="./assets/proyectos/po0.png"  alt="finance" loading="lazy" class="proyectos"  />
+                  </figure>
+                  <h3 class="project-title">PORTAFOLIO WEB</h3>
+                </a>
+              </li>
+
+              <li class="project-item active" data-filter-item data-category="web development"  >
+                <a href="#" onclick="openModal('modal1')">
+                  <figure class="project-img" >
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img src="./assets/proyectos/po1.png"  alt="finance" loading="lazy" class="proyectos"  />
+                  </figure>
+                  <h3 class="project-title">CRM - MINISTERIO PÚBLICO DE CAÑETE</h3>
+                </a>
+              </li>
+
+              <li class="project-item active" data-filter-item data-category="web development"  >
+                <a href="#" onclick="openModal('modal7')">
+                  <figure class="project-img" >
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img src="./assets/proyectos/po7.png"  alt="finance" loading="lazy" class="proyectos"  />
+                  </figure>
+                  <h3 class="project-title">SISTEMA DE ALMACEN - QUILMANÁ</h3>
+                </a>
+              </li>
+
+              <li class="project-item active" data-filter-item data-category="web development"  >
+                <a href="#" onclick="openModal('modal2')">
+                  <figure class="project-img" >
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img src="./assets/proyectos/po2.png"  alt="finance" loading="lazy" class="proyectos"  />
+                  </figure>
+                  <h3 class="project-title">SISTEMA DE ADMINISTRACIÓN CAÑETE</h3>
+                </a>
+              </li>
+              
+              <li class="project-item active" data-filter-item data-category="web development"  >
+                <a href="#" onclick="openModal('modal3')">
+                  <figure class="project-img" >
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img src="./assets/proyectos/po3.png"  alt="finance" loading="lazy" class="proyectos"  />
+                  </figure>
+                  <h3 class="project-title">WEB PARA CURSO DE CSS3</h3>
+                </a>
+              </li>
+
+              <li class="project-item active" data-filter-item data-category="web development"  >
+                <a href="#" onclick="openModal('modal4')">
+                  <figure class="project-img" >
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img src="./assets/proyectos/po4.png"  alt="finance" loading="lazy" class="proyectos"  />
+                  </figure>
+                  <h3 class="project-title">WEB DE ANIMACIONES</h3>
+                </a>
+              </li>
+
+              <li class="project-item active" data-filter-item data-category="web development"  >
+                <a href="#" onclick="openModal('modal5')">
+                  <figure class="project-img" >
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img src="./assets/proyectos/po5.png"  alt="finance" loading="lazy" class="proyectos"  />
+                  </figure>
+                  <h3 class="project-title">SISTEMA UDAVIT DE CAÑETE</h3>
+                </a>
+              </li>
+
+              <li class="project-item active" data-filter-item data-category="web development"  >
+                <a href="#" onclick="openModal('modal6')">
+                  <figure class="project-img" >
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img src="./assets/proyectos/po6.png"  alt="finance" loading="lazy" class="proyectos"  />
+                  </figure>
+                  <h3 class="project-title">SISTEMA DE ASISTENCIA PARA CONDUCTORES</h3>
+                </a>
+              </li>
+
+              <li class="project-item active" data-filter-item data-category="web development"  >
+                <a href="#" onclick="openModal('modal8')">
+                  <figure class="project-img" >
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img src="./assets/proyectos/po8.png"  alt="finance" loading="lazy" class="proyectos"  />
+                  </figure>
+                  <h3 class="project-title">WEB TOMORAY</h3>
+                </a>
+              </li>
+
+              <li class="project-item active" data-filter-item data-category="web development"  >
+                <a href="#" onclick="openModal('modal9')">
+                  <figure class="project-img" >
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img src="./assets/proyectos/po9.png"  alt="finance" loading="lazy" class="proyectos"  />
+                  </figure>
+                  <h3 class="project-title">SISTEMA DE MESA DE AYUDA</h3>
+                </a>
+              </li>
+
+              <li class="project-item active" data-filter-item data-category="web development"  >
+                <a href="#" onclick="openModal('modal10')">
+                  <figure class="project-img" >
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img src="./assets/proyectos/po10.png"  alt="finance" loading="lazy" class="proyectos"  />
+                  </figure>
+                  <h3 class="project-title">WEB HI - NET INTERNATIONAL</h3>
+                </a>
+              </li>
+
+              <li class="project-item active" data-filter-item data-category="web development"  >
+                <a href="#" onclick="openModal('modal11')">
+                  <figure class="project-img" >
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img src="./assets/proyectos/po11.png"  alt="finance" loading="lazy" class="proyectos"  />
+                  </figure>
+                  <h3 class="project-title">WEB OLSC</h3>
+                </a>
+              </li>
+
+              <li class="project-item active" data-filter-item data-category="web development"  >
+                <a href="#" onclick="openModal('modal12')">
+                  <figure class="project-img" >
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img src="./assets/proyectos/po12.png"  alt="finance" loading="lazy" class="proyectos"  />
+                  </figure>
+                  <h3 class="project-title">SISTEMA PUNTO DE VENTA - PIMENTEL</h3>
+                </a>
+              </li>
+
+              <li class="project-item active" data-filter-item data-category="web development"  >
+                <a href="#" onclick="openModal('modal13')">
+                  <figure class="project-img" >
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img src="./assets/proyectos/po13.png"  alt="finance" loading="lazy" class="proyectos"  />
+                  </figure>
+                  <h3 class="project-title">SISTEMA INTERNO DE REGISTRO FISCAL</h3>
+                </a>
+              </li>
+
+              <li class="project-item active" data-filter-item data-category="web development"  >
+                <a href="#" onclick="openModal('modal14')">
+                  <figure class="project-img" >
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img src="./assets/proyectos/po14.png"  alt="finance" loading="lazy" class="proyectos"  />
+                  </figure>
+                  <h3 class="project-title">SISTEMA - GRIFO RUEDA</h3>
+                </a>
+              </li>
+
+              <li class="project-item active" data-filter-item data-category="web development"  >
+                <a href="#" onclick="openModal('modal15')">
+                  <figure class="project-img" >
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img src="./assets/proyectos/po15.png"  alt="finance" loading="lazy" class="proyectos"  />
+                  </figure>
+                  <h3 class="project-title">SISTEMA DE CLINICA DR.PIRCA</h3>
+                </a>
+              </li>
+
+              <li class="project-item active" data-filter-item data-category="web development"  >
+                <a href="#" onclick="openModal('modal16')">
+                  <figure class="project-img" >
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img src="./assets/proyectos/po16.png"  alt="finance" loading="lazy" class="proyectos"  />
+                  </figure>
+                  <h3 class="project-title">CONTROL DE CLINICA VETERINARIA</h3>
+                </a>
+              </li>
+
+              <li class="project-item active" data-filter-item data-category="web development"  >
+                <a href="#" onclick="openModal('modal17')">
+                  <figure class="project-img" >
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img src="./assets/proyectos/po17.png"  alt="finance" loading="lazy" class="proyectos"  />
+                  </figure>
+                  <h3 class="project-title">REGISTRO DE LISTA DE HEROES</h3>
+                </a>
+              </li>
+
+              <li class="project-item active" data-filter-item data-category="web development"  >
+                <a href="#" onclick="openModal('modal18')">
+                  <figure class="project-img" >
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img src="./assets/proyectos/po18.png"  alt="finance" loading="lazy" class="proyectos"  />
+                  </figure>
+                  <h3 class="project-title">CLON DE SPOTIFY</h3>
+                </a>
+              </li>
+
+              <li class="project-item active" data-filter-item data-category="web development"  >
+                <a href="#" onclick="openModal('modal19')">
+                  <figure class="project-img" >
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img src="./assets/proyectos/po19.png"  alt="finance" loading="lazy" class="proyectos"  />
+                  </figure>
+                  <h3 class="project-title">WEB DEPORTES</h3>
+                </a>
+              </li>
+            </ul>
+            
+            <!-- Modals 0-->
+            <div id="modal0" class="modal">
+                <div class="modal-content">
+                  <span class="close" onclick="closeModal('modal0')">&times;</span>
+                  <div class="modal-left">
+                    <video src="./assets/video/p0.mp4"  muted autoplay loop ></video>
+                  </div>
+                  <div class="modal-right">
+                    <h2 style="color: white;">PORTAFOLIO WEB</h2>
+                    <p>Este es mi portafolio web personal, diseñado para presentar de manera profesional mis proyectos, habilidades y experiencia. La plataforma ofrece una visión clara y organizada de mi trabajo, permitiendo a los visitantes explorar mis logros y capacidades de forma intuitiva. Con un enfoque en la presentación visual y la navegación fluida, el portafolio refleja mi compromiso con la calidad y la atención al detalle en cada aspecto de mi desarrollo profesional.</p>
+                    <p><b>Tecnologías usadas:</b>  </p>
+                      <p style="color: #1E90FF;">#HTML5 #CSS3 #JavaScript #Bootstrap #Git #Scrum #Trello #Notion #Figma</p> 
+                  </div>
+                </div>
+            </div>
+
+            <!-- Modals 1-->
+            <div id="modal1" class="modal">
+              <div class="modal-content">
+                <span class="close" onclick="closeModal('modal1')">&times;</span>
+                <div class="modal-left">
+                  <video src="./assets/video/p1.mp4"  muted autoplay loop ></video>
+                </div>
+                <div class="modal-right">
+                  <h2 style="color: white;">CRM - MINISTERIO PÚBLICO DE CAÑETE</h2>
+                  <p>Aplicación que optimiza la gestión administrativa y operativa del Ministerio Público en Cañete. Incluye funcionalidades para gestionar inventarios, controlar la asistencia del personal y administrar el potencial humano, entre otros. </p>
+                  <p><b>Tecnologías usadas:</b>  </p>
+                    <p style="color: #1E90FF;">#Angular 12 #Java (Spring Boot) #HTML5 #CSS3 #MySQL #Docker #GitHub #TypeScript #Bootstrap #JMeter #JUnit #Git #Scrum #Trello #Notion #Jira #Figma #Postman</p> 
+                </div>
+              </div>
+            </div>
+
+            <!-- Modals 2-->
+            <div id="modal2" class="modal">
+              <div class="modal-content">
+                <span class="close" onclick="closeModal('modal2')">&times;</span>
+                <div class="modal-left">
+                  <video src="./assets/video/p2.mp4"  muted autoplay loop ></video>
+                </div>
+                <div class="modal-right">
+                  <h2 style="color: white;">SISTEMA DE ADMINISTRACIÓN CAÑETE</h2>
+                  <p>Implementé un sistema de administración para el Ministerio Público - Fiscalía de la Nación en Cañete, centrado en la gestión eficiente del potencial humano. Este sistema proporciona una solución integral para optimizar el manejo de recursos y la supervisión del personal, facilitando el seguimiento y la coordinación de las actividades operativas. El proyecto busca mejorar la eficiencia y la transparencia en las operaciones diarias del ministerio.
+                  </p>
+                  <p><b>Tecnologías usadas:</b>  </p>
+                    <p style="color: #1E90FF;">#Laravel10 #HTML5 #CSS3 #MySQL #Docker #GitHub #TypeScript #Bootstrap #JMeter #JUnit #Git #Scrum #Trello #Notion #Jira #Figma #Postman</p> 
+                </div>
+              </div>
+            </div>
+
+            <!-- Modals 3-->
+            <div id="modal3" class="modal">
+              <div class="modal-content">
+                <span class="close" onclick="closeModal('modal3')">&times;</span>
+                <div class="modal-left">
+                  <video src="./assets/video/p3.mp4"  muted autoplay loop ></video>
+                </div>
+                <div class="modal-right">
+                  <h2 style="color: white;">WEB PARA CURSO DE CSS3</h2>
+                  <p>Desarrollé una página web promocional para un curso de CSS3, enfocada en destacar las características y beneficios del curso. La página incluye una presentación visual atractiva con información detallada sobre el contenido del curso, testimonios de estudiantes y un formulario de inscripción. El diseño moderno y profesional de la página busca captar la atención de los visitantes y motivarlos a inscribirse en el curso.
+                  </p>
+                  <p><b>Tecnologías usadas:</b>  </p>
+                    <p style="color: #1E90FF;">#Angular12 #HTML5 #CSS3 #GitHub #Bootstrap #Git #Scrum #Trello #Notion #Jira #Figma </p> 
+                </div>
+              </div>
+            </div>
+
+            <!-- Modals 4-->
+            <div id="modal4" class="modal">
+              <div class="modal-content">
+                <span class="close" onclick="closeModal('modal4')">&times;</span>
+                <div class="modal-left">
+                  <video src="./assets/video/p4.mp4"  muted autoplay loop ></video>
+                </div>
+                <div class="modal-right">
+                  <h2 style="color: white;">WEB DE ANIAMACIONES</h2>
+                  <p>Diseñé una página web enfocada en animaciones, utilizando Tailwind CSS para crear un diseño moderno y estilizado. La web presenta una colección de animaciones visualmente impactantes que mejoran la experiencia del usuario, mostrando el potencial creativo de Tailwind CSS. Cada animación se implementó cuidadosamente para asegurar una ejecución fluida y atractiva, destacando las posibilidades de personalización y dinamismo en el diseño web.
+                  </p>
+                  <p><b>Tecnologías usadas:</b>  </p>
+                    <p style="color: #1E90FF;">#Angular12 #HTML5 #CSS3 #GitLab #TailwindCSS #Git #Scrum #Trello #Notion #Jira #Figma </p> 
+                </div>
+              </div>
+            </div>
+
+            <!-- Modals 5-->
+            <div id="modal5" class="modal">
+              <div class="modal-content">
+                <span class="close" onclick="closeModal('modal5')">&times;</span>
+                <div class="modal-left">
+                  <video src="./assets/video/p5.mp4"  muted autoplay loop ></video>
+                </div>
+                <div class="modal-right">
+                  <h2 style="color: white;">SISTEMA UDAVIT DE CAÑETE</h2>
+                  <p>Desarrollé el Sistema UDAVIT para el Ministerio Público - Fiscalía de la Nación en Cañete, enfocado en la atención y soporte a víctimas y testigos. Este sistema facilita la gestión de casos, el seguimiento de asistencia y la coordinación de servicios de apoyo, asegurando una respuesta rápida y eficiente. La plataforma permite una administración centralizada y accesible, mejorando la calidad del servicio brindado a las personas afectadas y garantizando una atención integral y personalizada.
+                  </p>
+                  <p><b>Tecnologías usadas:</b>  </p>
+                    <p style="color: #1E90FF;">#Laravel10 #HTML5 #CSS3 #MySQL #Docker #GitHub #TypeScript #Bootstrap #JMeter #JUnit #Git #Scrum #Trello #Notion #Jira #Figma #Postman</p> 
+                </div>
+              </div>
+            </div>
+
+            <!-- Modals 6-->
+            <div id="modal6" class="modal">
+              <div class="modal-content">
+                <span class="close" onclick="closeModal('modal6')">&times;</span>
+                <div class="modal-left">
+                  <video src="./assets/video/p6.mp4"  muted autoplay loop ></video>
+                </div>
+                <div class="modal-right">
+                  <h2 style="color: white;">SISTEMA DE ASISTENCIA PARA CONDUCTORES</h2>
+                  <p>Implementé un sistema de asistencia para conductores diseñado para gestionar y optimizar el control de asistencia de los conductores. Este sistema permite registrar y monitorear la asistencia diaria de manera eficiente, facilitando el seguimiento de horarios y la generación de reportes detallados. Con una interfaz intuitiva y funcionalidades automatizadas, el sistema mejora la precisión y la transparencia en el control de asistencia, beneficiando tanto a los conductores como a la administración.
+                  </p>
+                  <p><b>Tecnologías usadas:</b>  </p>
+                    <p style="color: #1E90FF;">#Laravel10 #HTML5 #CSS3 #MySQL #Docker #GitHub #TypeScript #Bootstrap #JMeter #JUnit #Git #Scrum #Trello #Notion #Jira #Figma #Postman</p> 
+                </div>
+              </div>
+            </div>
+
+            <!-- Modals 7-->
+            <div id="modal7" class="modal">
+              <div class="modal-content">
+                <span class="close" onclick="closeModal('modal7')">&times;</span>
+                <div class="modal-left">
+                  <video src="./assets/video/p7.mp4"  muted autoplay loop ></video>
+                </div>
+                <div class="modal-right">
+                  <h2 style="color: white;">SISTEMA DE ALMACEN - QUILMANÁ</h2>
+                  <p>Desarrollé un sistema de almacén para la localidad de Quilmaná, diseñado para gestionar y optimizar el control de inventarios. Este sistema permite registrar, monitorear y actualizar el stock de productos de manera eficiente, facilitando la gestión de entradas y salidas, así como la generación de reportes detallados. Con una interfaz intuitiva y funcionalidades automatizadas, el sistema mejora la precisión y la transparencia en el manejo de inventarios, asegurando un control adecuado y la disponibilidad de los productos.
+                  </p>
+                  <p><b>Tecnologías usadas:</b>  </p>
+                    <p style="color: #1E90FF;">#Laravel10 #HTML5 #CSS3 #MySQL #Docker #GitHub #TypeScript #Bootstrap #JMeter #JUnit #Git #Scrum #Trello #Notion #Jira #Figma #Postman</p> 
+                </div>
+              </div>
+            </div>
+
+            <!-- Modals 8-->
+            <div id="modal8" class="modal">
+              <div class="modal-content">
+                <span class="close" onclick="closeModal('modal8')">&times;</span>
+                <div class="modal-left">
+                  <video src="./assets/video/p8.mp4"  muted autoplay loop ></video>
+                </div>
+                <div class="modal-right">
+                  <h2 style="color: white;">WEB TOMORAY</h2>
+                  <p>Desarrollé el sitio web de Tomoray, una plataforma promocional diseñada para destacar los servicios y productos de la empresa. La página web presenta un diseño moderno y atractivo, con secciones informativas que detallan la misión, visión y ofertas de Tomoray. Además, incluye elementos visuales impactantes y una navegación intuitiva, asegurando una experiencia de usuario fluida y agradable. El sitio está optimizado para dispositivos móviles y de escritorio, garantizando accesibilidad y visibilidad en todas las plataformas.
+                  </p>
+                  <p><b>Tecnologías usadas:</b>  </p>
+                    <p style="color: #1E90FF;">#ReactJS #HTML5 #CSS3 #MySQL #Docker #GitHub #TypeScript #Bootstrap #JMeter #JUnit #Git #Scrum #Trello #Notion #Jira #Figma #Postman</p> 
+                </div>
+              </div>
+            </div>
+
+            <!-- Modals 9-->
+            <div id="modal9" class="modal">
+              <div class="modal-content">
+                <span class="close" onclick="closeModal('modal9')">&times;</span>
+                <div class="modal-left">
+                  <video src="./assets/video/p9.mp4"  muted autoplay loop ></video>
+                </div>
+                <div class="modal-right">
+                  <h2 style="color: white;">SISTEMA DE MESA DE AYUDA</h2>
+                  <p>Implementé un sistema de mesa de ayuda diseñado para gestionar y resolver solicitudes de soporte de manera eficiente. Esta plataforma permite a los usuarios registrar incidencias, realizar seguimientos y obtener soluciones rápidas a sus problemas. Con una interfaz amigable y funciones automatizadas, el sistema optimiza el flujo de trabajo del equipo de soporte, mejora la comunicación y asegura una atención oportuna y efectiva a las necesidades de los usuarios.
+                  </p>
+                  <p><b>Tecnologías usadas:</b>  </p>
+                    <p style="color: #1E90FF;">#Laravel11 #HTML5 #CSS3 #MySQL #Docker #GitHub #TypeScript #Bootstrap #JMeter #JUnit #Git #Scrum #Trello #Notion #Jira #Figma #Postman</p> 
+                </div>
+              </div>
+            </div>
+
+            <!-- Modals 10-->
+            <div id="modal10" class="modal">
+              <div class="modal-content">
+                <span class="close" onclick="closeModal('modal10')">&times;</span>
+                <div class="modal-left">
+                  <video src="./assets/video/p10.mp4"  muted autoplay loop ></video>
+                </div>
+                <div class="modal-right">
+                  <h2 style="color: white;">WEB HI - NET INTERNATIONAL</h2>
+                  <p>Desarrollé el sitio web para Hi - Net International, una plataforma corporativa diseñada para resaltar los servicios y soluciones tecnológicas de la empresa. La web presenta un diseño profesional y moderno, con secciones detalladas que informan sobre los productos, servicios, casos de éxito y el equipo de Hi - Net International. Además, cuenta con una navegación intuitiva y elementos visuales atractivos, ofreciendo una experiencia de usuario óptima. El sitio está optimizado para dispositivos móviles y de escritorio, garantizando accesibilidad y visibilidad en todas las plataformas.
+                  </p>
+                  <p><b>Tecnologías usadas:</b>  </p>
+                    <p style="color: #1E90FF;">#VueJS #HTML5 #CSS3 #MySQL #Docker #GitHub #TypeScript #Bootstrap #JMeter #JUnit #Git #Scrum #Trello #Notion #Jira #Figma #Postman</p> 
+                </div>
+              </div>
+            </div>
+
+            <!-- Modals 11-->
+            <div id="modal11" class="modal">
+              <div class="modal-content">
+                <span class="close" onclick="closeModal('modal11')">&times;</span>
+                <div class="modal-left">
+                  <video src="./assets/video/p11.mp4"  muted autoplay loop ></video>
+                </div>
+                <div class="modal-right">
+                  <h2 style="color: white;">WEB OLSC</h2>
+                  <p>Desarrollé el sitio web para OLSC, una plataforma en línea diseñada para promover y dar a conocer los servicios y actividades de la organización. El sitio presenta un diseño limpio y moderno, con secciones informativas sobre los objetivos, eventos y programas de OLSC. La web incluye una navegación intuitiva y contenido visual atractivo, proporcionando a los visitantes una experiencia de usuario agradable y fácil de usar.
+                  </p>
+                  <p><b>Tecnologías usadas:</b>  </p>
+                    <p style="color: #1E90FF;">#VueJS #HTML5 #CSS3 #MySQL #Docker #GitHub #TypeScript #Bootstrap #JMeter #JUnit #Git #Scrum #Trello #Notion #Jira #Figma #Postman</p> 
+                </div>
+              </div>
+            </div>
+
+            <!-- Modals 12-->
+            <div id="modal12" class="modal">
+              <div class="modal-content">
+                <span class="close" onclick="closeModal('modal12')">&times;</span>
+                <div class="modal-left">
+                  <video src="./assets/video/p12.mp4"  muted autoplay loop ></video>
+                </div>
+                <div class="modal-right">
+                  <h2 style="color: white;">SISTEMA PUNTO DE VENTA - PIMENTEL</h2>
+                  <p>Desarrollé un sistema de punto de venta (POS) para Pimentel, diseñado para gestionar de manera eficiente las transacciones comerciales en el punto de venta. Este sistema facilita el registro de ventas, la gestión de inventarios y la generación de reportes detallados. Con una interfaz intuitiva y funcionalidades avanzadas, el sistema optimiza el proceso de ventas, mejora el control de stock y proporciona una experiencia de usuario fluida tanto para el personal de ventas como para los administradores.
+                  </p>
+                  <p><b>Tecnologías usadas:</b>  </p>
+                    <p style="color: #1E90FF;">#Laravel10 #HTML5 #CSS3 #MySQL #Docker #GitHub  #Bootstrap #JMeter #JUnit #Git #Scrum #Trello #Notion #Jira #Figma #Postman</p> 
+                </div>
+              </div>
+            </div>
+
+            <!-- Modals 13-->
+            <div id="modal13" class="modal">
+              <div class="modal-content">
+                <span class="close" onclick="closeModal('modal13')">&times;</span>
+                <div class="modal-left">
+                  <video src="./assets/video/p13.mp4"  muted autoplay loop ></video>
+                </div>
+                <div class="modal-right">
+                  <h2 style="color: white;">SISTEMA INTERNO DE REGISTRO FISCAL</h2>
+                  <p>Desarrollé un sistema interno de registro fiscal diseñado para optimizar la gestión y el seguimiento de documentos fiscales dentro de la organización. Este sistema facilita el registro, almacenamiento y consulta de información fiscal, asegurando el cumplimiento normativo y la transparencia en los procesos. Con una interfaz clara y herramientas de búsqueda avanzadas, el sistema mejora la eficiencia en la gestión de registros y la generación de informes, proporcionando a los usuarios una solución efectiva para el manejo de documentación fiscal.
+                  </p>
+                  <p><b>Tecnologías usadas:</b>  </p>
+                    <p style="color: #1E90FF;">#Laravel10 #HTML5 #CSS3 #MySQL #Docker #GitHub  #Bootstrap #JMeter #JUnit #Git #Scrum #Trello #Notion #Jira #Figma #Postman</p> 
+                </div>
+              </div>
+            </div>
+            
+            <!-- Modals 14-->
+            <div id="modal14" class="modal">
+              <div class="modal-content">
+                <span class="close" onclick="closeModal('modal14')">&times;</span>
+                <div class="modal-left">
+                  <video src="./assets/video/p14.mp4"  muted autoplay loop ></video>
+                </div>
+                <div class="modal-right">
+                  <h2 style="color: white;">SISTEMA - GRIFO RUEDA</h2>
+                  <p>Desarrollé un sistema para Grifo Rueda, diseñado para gestionar de manera integral las operaciones del establecimiento. Este sistema optimiza el control de inventarios, el registro de ventas y la administración de clientes, proporcionando una solución completa para la gestión del negocio. Con una interfaz amigable y funcionalidades específicas para el sector, el sistema facilita la operación diaria, mejora la precisión en el manejo de datos y permite una supervisión efectiva de las actividades del grifo.
+                  </p>
+                  <p><b>Tecnologías usadas:</b>  </p>
+                    <p style="color: #1E90FF;">#Angular12 #Java (Spring Boot) #HTML5 #CSS3 #MySQL #Docker #GitHub #TypeScript #Bootstrap #JMeter #JUnit #Git #Scrum #Trello #Notion #Jira #Figma #Postman</p> 
+                </div>
+              </div>
+            </div>
+
+            <!-- Modals 15-->
+            <div id="modal15" class="modal">
+              <div class="modal-content">
+                <span class="close" onclick="closeModal('modal15')">&times;</span>
+                <div class="modal-left">
+                  <video src="./assets/video/p15.mp4"  muted autoplay loop ></video>
+                </div>
+                <div class="modal-right">
+                  <h2 style="color: white;">SISTEMA DE CLINICA DR.PIRCA</h2>
+                  <p>Desarrollé un sistema para la Clínica Dr. Pirca, orientado a gestionar de manera eficiente las operaciones clínicas y administrativas. Este sistema facilita la programación de citas, el registro de pacientes, la gestión de historiales médicos y la administración de facturación. Con una interfaz intuitiva y funciones específicas para el entorno clínico, el sistema mejora la eficiencia en la atención al paciente y optimiza el flujo de trabajo en la clínica, asegurando una gestión organizada y efectiva de los servicios médicos.
+                  </p>
+                  <p><b>Tecnologías usadas:</b>  </p>
+                    <p style="color: #1E90FF;">#Angular12 #Java (Spring Boot) #HTML5 #CSS3 #MySQL #Docker #GitHub #TypeScript #Bootstrap #JMeter #JUnit #Git #Scrum #Trello #Notion #Jira #Figma #Postman</p> 
+                </div>
+              </div>
+            </div>
+
+            <!-- Modals 16-->
+            <div id="modal16" class="modal">
+              <div class="modal-content">
+                <span class="close" onclick="closeModal('modal16')">&times;</span>
+                <div class="modal-left">
+                  <video src="./assets/video/p16.mp4"  muted autoplay loop ></video>
+                </div>
+                <div class="modal-right">
+                  <h2 style="color: white;">CONTROL DE CLINICA VETERINARIA</h2>
+                  <p>Desarrollé un sistema de control para una clínica veterinaria, enfocado exclusivamente en la gestión de citas. Este sistema permite registrar y organizar las citas de manera eficiente, facilitando la programación y seguimiento de las consultas veterinarias. Con una interfaz sencilla e intuitiva, el sistema optimiza el proceso de agendamiento, asegurando que las citas se gestionen de forma ordenada y sin conflictos.
+                  </p>
+                  <p><b>Tecnologías usadas:</b>  </p>
+                    <p style="color: #1E90FF;">#ReactJS #HTML5 #CSS3 #GitHub #TypeScript #Bootstrap #Git #Scrum #Trello #Notion #Jira #Figma</p> 
+                </div>
+              </div>
+            </div>
+
+            <!-- Modals 17-->
+            <div id="modal17" class="modal">
+              <div class="modal-content">
+                <span class="close" onclick="closeModal('modal17')">&times;</span>
+                <div class="modal-left">
+                  <video src="./assets/video/p17.mp4"  muted autoplay loop ></video>
+                </div>
+                <div class="modal-right">
+                  <h2 style="color: white;">REGISTRO DE LISTA DE HEROES</h2>
+                  <p>Desarrollé un sistema de registro diseñado para gestionar una lista de héroes. Este sistema permite registrar, organizar y consultar información detallada sobre cada héroe de manera eficiente. Con una interfaz intuitiva y fácil de usar, el sistema facilita el acceso y la actualización de datos, asegurando que la información sobre los héroes esté siempre actualizada y accesible para los usuarios.
+                  </p>
+                  <p><b>Tecnologías usadas:</b>  </p>
+                    <p style="color: #1E90FF;">#Angular12 #HTML5 #CSS3 #GitHub #TypeScript #Bootstrap #Git #Scrum #Trello #Notion #Jira #Figma</p> 
+                </div>
+              </div>
+            </div>
+            
+            <!-- Modals 18-->
+            <div id="modal18" class="modal">
+              <div class="modal-content">
+                <span class="close" onclick="closeModal('modal18')">&times;</span>
+                <div class="modal-left">
+                  <video src="./assets/video/p18.mp4"  muted autoplay loop ></video>
+                </div>
+                <div class="modal-right">
+                  <h2 style="color: white;">CLON DE SPOTIFY</h2>
+                  <p>Desarrollé un clon de Spotify, una plataforma de música en streaming que replica las principales características y funcionalidades del servicio original. Este proyecto incluye la capacidad de buscar y reproducir canciones y explorar música por diferentes categorías. Con un diseño intuitivo y una interfaz atractiva, el clon proporciona una experiencia de usuario similar a la de Spotify, ofreciendo una navegación fluida y una reproducción de música de alta calidad.
+                  </p>
+                  <p><b>Tecnologías usadas:</b>  </p>
+                    <p style="color: #1E90FF;">#Angular12 #HTML5 #CSS3 #GitHub #TypeScript #Bootstrap #Git #Scrum #Trello #Notion #Jira #Figma</p> 
+                </div>
+              </div>
+            </div>
+
+            <!-- Modals 19-->
+            <div id="modal19" class="modal">
+              <div class="modal-content">
+                <span class="close" onclick="closeModal('modal19')">&times;</span>
+                <div class="modal-left">
+                  <video src="./assets/video/p19.mp4"  muted autoplay loop ></video>
+                </div>
+                <div class="modal-right">
+                  <h2 style="color: white;">WEB DEPORTES</h2>
+                  <p>Desarrollé una página web informativa dedicada al mundo de los deportes. Esta plataforma proporciona noticias y artículos actualizados sobre diversas disciplinas deportivas. Con un diseño claro y una interfaz fácil de navegar, la página ofrece a los visitantes información relevante y actual sobre eventos deportivos, resultados y temas de interés para los aficionados al deporte.
+                  </p>
+                  <p><b>Tecnologías usadas:</b>  </p>
+                    <p style="color: #1E90FF;">#VueJS #HTML5 #CSS3 #GitHub #TypeScript #Bootstrap #Git #Scrum #Trello #Notion #Jira #Figma</p> 
+                </div>
+              </div>
+            </div>
+            
+          </section>
+        </article>
+
+        <!--
+        - #BLOG
+      -->
+
+        <article class="blog" data-page="blog">
+          <header>
+            <h2 class="h2 article-title">Blog</h2>
+          </header>
+
+          <section class="blog-posts">
+            <ul class="blog-posts-list">
+              <li class="blog-post-item">
+                <a href="#">
+                  <figure class="blog-banner-box">
+                    <img
+                      src="./assets/images/blog-1.jpg"
+                      alt="Design conferences in 2022"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">Design</p>
+
+                      <span class="dot"></span>
+
+                      <time datetime="2022-02-23">Fab 23, 2022</time>
+                    </div>
+
+                    <h3 class="h3 blog-item-title">
+                      Design conferences in 2022
+                    </h3>
+
+                    <p class="blog-text">
+                      Veritatis et quasi architecto beatae vitae dicta sunt,
+                      explicabo.
+                    </p>
+                  </div>
+                </a>
+              </li>
+
+              <li class="blog-post-item">
+                <a href="#">
+                  <figure class="blog-banner-box">
+                    <img
+                      src="./assets/images/blog-2.jpg"
+                      alt="Best fonts every designer"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">Design</p>
+
+                      <span class="dot"></span>
+
+                      <time datetime="2022-02-23">Fab 23, 2022</time>
+                    </div>
+
+                    <h3 class="h3 blog-item-title">
+                      Best fonts every designer
+                    </h3>
+
+                    <p class="blog-text">
+                      Sed ut perspiciatis, nam libero tempore, cum soluta nobis
+                      est eligendi.
+                    </p>
+                  </div>
+                </a>
+              </li>
+
+              <li class="blog-post-item">
+                <a href="#">
+                  <figure class="blog-banner-box">
+                    <img
+                      src="./assets/images/blog-3.jpg"
+                      alt="Design digest #80"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">Design</p>
+
+                      <span class="dot"></span>
+
+                      <time datetime="2022-02-23">Fab 23, 2022</time>
+                    </div>
+
+                    <h3 class="h3 blog-item-title">Design digest #80</h3>
+
+                    <p class="blog-text">
+                      Excepteur sint occaecat cupidatat no proident, quis
+                      nostrum exercitationem ullam corporis suscipit.
+                    </p>
+                  </div>
+                </a>
+              </li>
+
+              <li class="blog-post-item">
+                <a href="#">
+                  <figure class="blog-banner-box">
+                    <img
+                      src="./assets/images/blog-4.jpg"
+                      alt="UI interactions of the week"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">Design</p>
+
+                      <span class="dot"></span>
+
+                      <time datetime="2022-02-23">Fab 23, 2022</time>
+                    </div>
+
+                    <h3 class="h3 blog-item-title">
+                      UI interactions of the week
+                    </h3>
+
+                    <p class="blog-text">
+                      Enim ad minim veniam, consectetur adipiscing elit, quis
+                      nostrud exercitation ullamco laboris nisi.
+                    </p>
+                  </div>
+                </a>
+              </li>
+
+              <li class="blog-post-item">
+                <a href="#">
+                  <figure class="blog-banner-box">
+                    <img
+                      src="./assets/images/blog-5.jpg"
+                      alt="The forgotten art of spacing"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">Design</p>
+
+                      <span class="dot"></span>
+
+                      <time datetime="2022-02-23">Fab 23, 2022</time>
+                    </div>
+
+                    <h3 class="h3 blog-item-title">
+                      The forgotten art of spacing
+                    </h3>
+
+                    <p class="blog-text">
+                      Maxime placeat, sed do eiusmod tempor incididunt ut labore
+                      et dolore magna aliqua.
+                    </p>
+                  </div>
+                </a>
+              </li>
+
+              <li class="blog-post-item">
+                <a href="#">
+                  <figure class="blog-banner-box">
+                    <img
+                      src="./assets/images/blog-6.jpg"
+                      alt="Design digest #79"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">Design</p>
+
+                      <span class="dot"></span>
+
+                      <time datetime="2022-02-23">Fab 23, 2022</time>
+                    </div>
+
+                    <h3 class="h3 blog-item-title">Design digest #79</h3>
+
+                    <p class="blog-text">
+                      Optio cumque nihil impedit uo minus quod maxime placeat,
+                      velit esse cillum.
+                    </p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </article>
+
+        <!--
+        - #CONTACT
+      -->
+
+        <article class="contáctame" data-page="contáctame">
+          <header>
+            <h2 class="h2 article-title">Contáctame</h2>
+          </header>
+
+          <section class="mapbox" data-mapbox>
+            <figure>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31209.527381537053!2d-77.05236725506751!3d-12.099078443682522!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c842bd2342fb%3A0x7e3183f45f461207!2sSan%20Isidro!5e0!3m2!1ses!2spe!4v1722224604215!5m2!1ses!2spe"
+                width="400"
+                height="300"
+                loading="lazy"
+              ></iframe>
+            </figure>
+          </section>
+
+          <section class="contact-form">
+            <h3 class="h3 form-title">Formulario de Contacto</h3>
+
+            <form action="#" class="form" data-form id="contactForm">
+              <div class="input-wrapper">
+                <input
+                  type="text"
+                  name="fullName"
+                  class="form-input"
+                  placeholder="Nombres y Apellidos"
+                  disabled
+                  data-form-input
+                />
+            
+                <input
+                  type="email"
+                  name="email"
+                  class="form-input"
+                  placeholder="Correo Electrónico"
+                  disabled
+                  data-form-input
+                />
+              </div>
+            
+              <textarea
+                name="message"
+                class="form-input"
+                placeholder="Mensaje"
+                disabled
+                data-form-input
+              ></textarea>
+            
+              <button class="form-btn" type="submit" disabled data-form-btn>
+                <ion-icon name="paper-plane"></ion-icon>
+                <span>Enviar Mensaje</span>
+              </button>
+            </form>
+            
+          </section>
+        </article>
+      </div>
+    </main>
+
+    <!--
+    - custom js link
+  -->
+    <script src="./assets/js/script.js"></script>
+
+    <!--
+    - ionicon link
+  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
